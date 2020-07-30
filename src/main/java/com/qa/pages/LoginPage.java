@@ -9,7 +9,7 @@ import com.qa.util.TestUtil;
 
 public class LoginPage extends TestBase {
 	
-	//#1 Using Page Factory we will define the page objects using annotation @findBy 
+	
 		@FindBy(name="email")
 		WebElement userEmail;
 		
@@ -23,28 +23,23 @@ public class LoginPage extends TestBase {
 		WebElement bellIcon;
 
 		
-		//#2 Initialize the page factory
-		public LoginPage()
-		{
+		
+		public LoginPage(){
 			PageFactory.initElements(driver, this);
 		}
 
 		
 		
-		//#3 Actions which you want to perform in LoginPage
 		
-		public String validateLoginPageTitle()
-		{
+		public String validateLoginPageTitle(){
 			return driver.getTitle();
 		}
 
-		public boolean validateBellIcon()
-		{
+		public boolean validateBellIcon(){
 			return bellIcon.isDisplayed();
 		}
 		
-		public HomePage login(String email, String pwd) throws InterruptedException
-		{
+		public HomePage login(String email, String pwd) throws InterruptedException{
 			TestUtil.flashElement(userEmail);
 			userEmail.sendKeys(email);
 			
