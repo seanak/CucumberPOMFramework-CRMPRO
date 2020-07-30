@@ -125,24 +125,34 @@ formatter.step({
   "name": "Home Page is Displayed",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "HomePageSteps.user_opens_browser()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "HomePageSteps.user_is_on_Login_Page()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
-formatter.match({});
+formatter.match({
+  "location": "HomePageSteps.user_enters_username_and_password()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
+});
+formatter.match({
+  "location": "HomePageSteps.user_clicks_on_login_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "HomePageSteps.home_Page_is_Displayed()"
+});
+formatter.result({
+  "status": "skipped"
 });
 });

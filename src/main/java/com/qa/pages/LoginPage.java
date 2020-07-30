@@ -10,17 +10,17 @@ import com.qa.util.TestUtil;
 public class LoginPage extends TestBase {
 	
 	
-		@FindBy(name="email")
-		WebElement userEmail;
+		@FindBy(name="username")
+		WebElement username;
 		
 		@FindBy(name="password")
 		WebElement userPassword;
 		
-		@FindBy(xpath="//div[@class='ui fluid large blue submit button']")
+		@FindBy(xpath="//input[@class='btn btn-small']")
 		WebElement loginButton;
 		
-		@FindBy(xpath="//div[@class='onesignal-bell-launcher-button']")
-		WebElement bellIcon;
+		@FindBy(xpath="//a[@class='navbar-brand']")
+		WebElement LoginPageHeader;
 
 		
 		
@@ -35,13 +35,13 @@ public class LoginPage extends TestBase {
 			return driver.getTitle();
 		}
 
-		public boolean validateBellIcon(){
-			return bellIcon.isDisplayed();
+		public boolean verifyLoginPageHeader(){
+			return LoginPageHeader.isDisplayed();
 		}
 		
 		public HomePage login(String email, String pwd) throws InterruptedException{
-			TestUtil.flashElement(userEmail);
-			userEmail.sendKeys(email);
+			TestUtil.flashElement(username);
+			username.sendKeys(email);
 			
 			TestUtil.flashElement(userPassword);
 			userPassword.sendKeys(pwd);

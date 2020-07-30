@@ -86,47 +86,57 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 25,
             "name": "user opens browser",
-            "match": {},
+            "match": {
+              "location": "HomePageSteps.user_opens_browser()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 26,
             "name": "user is on Login Page",
-            "match": {},
+            "match": {
+              "location": "HomePageSteps.user_is_on_Login_Page()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 27,
             "name": "user enters username and password",
-            "match": {},
+            "match": {
+              "location": "HomePageSteps.user_enters_username_and_password()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 28,
             "name": "user clicks on login button",
-            "match": {},
+            "match": {
+              "location": "HomePageSteps.user_clicks_on_login_button()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 29,
             "name": "Home Page is Displayed",
-            "match": {},
+            "match": {
+              "location": "HomePageSteps.home_Page_is_Displayed()"
+            },
             "keyword": "Then "
           }
         ],
