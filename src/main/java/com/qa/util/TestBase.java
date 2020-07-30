@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class TestBase {
 
 	    public static WebDriver driver;
@@ -33,16 +35,15 @@ public class TestBase {
 		}
 		
 		public static void initilize(){
-			String browserName = prop.getProperty("browserName");
-			String applicationUrl = prop.getProperty("applicationUrl");
+			String browserName = prop.getProperty("browser");
 			
-			if(browserName.equalsIgnoreCase("Chrome"))
-			{
+			if(browserName.equalsIgnoreCase("chrome")){
+				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 			}
 			
-			else if(browserName.equalsIgnoreCase("Firefox"))
-			{
+			else if(browserName.equalsIgnoreCase("firefox")){
+				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 			}
 			
@@ -51,7 +52,7 @@ public class TestBase {
 			driver.manage().window().maximize();		
 			//driver.manage().timeouts().implicitlyWait(TestUtil.PAGE_LOAD_WAIT, TimeUnit.SECONDS);
 			//driver.manage().timeouts().pageLoadTimeout(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
-			driver.get(applicationUrl);
+			driver.get(prop.getProperty("url"));
 		}
 	
 	

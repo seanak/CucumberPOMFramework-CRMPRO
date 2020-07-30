@@ -1,12 +1,14 @@
 package com.qa.stepDefinitions;
 
+import com.qa.util.TestBase;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
-public class HomePageSteps {
+public class HomePageSteps extends TestBase {
 	@Given("^user opens browser$")
 	public void user_opens_browser()  {
-	    
+	    TestBase.initilize();
 	    
 	}
 

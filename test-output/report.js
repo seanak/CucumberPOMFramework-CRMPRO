@@ -129,30 +129,35 @@ formatter.match({
   "location": "HomePageSteps.user_opens_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 34283856400,
+  "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_is_on_Login_Page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 66800,
+  "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_enters_username_and_password()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 66700,
+  "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_clicks_on_login_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 64200,
+  "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.home_Page_is_Displayed()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 69900,
+  "status": "passed"
 });
 });

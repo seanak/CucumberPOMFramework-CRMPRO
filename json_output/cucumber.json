@@ -86,7 +86,8 @@
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 34283856400,
+              "status": "passed"
             },
             "line": 25,
             "name": "user opens browser",
@@ -97,7 +98,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 66800,
+              "status": "passed"
             },
             "line": 26,
             "name": "user is on Login Page",
@@ -108,7 +110,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 66700,
+              "status": "passed"
             },
             "line": 27,
             "name": "user enters username and password",
@@ -119,7 +122,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 64200,
+              "status": "passed"
             },
             "line": 28,
             "name": "user clicks on login button",
@@ -130,7 +134,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 69900,
+              "status": "passed"
             },
             "line": 29,
             "name": "Home Page is Displayed",

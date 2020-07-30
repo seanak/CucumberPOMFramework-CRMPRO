@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 		plugin={"pretty","html:test-output", "junit:junit_xml/cucumber.xml", "json:json_output/cucumber.json"},
 		monochrome= true,
 		strict= true,
-		dryRun= true
+		dryRun= false
 		)
 public class TestRunner {
 
