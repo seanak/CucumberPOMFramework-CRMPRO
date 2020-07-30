@@ -49,7 +49,7 @@ public class LoginPage extends TestBase {
 			TestUtil.flashElement(loginButton);
 			loginButton.click();
 			
-			return new HomePage();
+			return new HomePage(driver);
 		}
 
 }
