@@ -10,7 +10,6 @@ import com.qa.util.TestBase;
 
 public class HomePage extends TestBase {
 	
-	//WebDriver driver;
 	LoginPage  loginpage;
 	Actions action;
 	
@@ -41,11 +40,11 @@ public class HomePage extends TestBase {
 		driver.switchTo().frame(frameMain);
 		
 	}
-	 public void goToContactMenu(){
+	 public ContactsPage goToContactMenu(){
 		WebElement parentCon = driver.findElement(contactMenu);
 		action.moveToElement(parentCon).build().perform();
 		driver.findElement(contactSubMenu).click();
-		 
+		 return new ContactsPage(driver);
 	 }
 
 }

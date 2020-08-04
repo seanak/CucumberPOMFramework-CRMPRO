@@ -27,5 +27,10 @@ Feature: Free CRM Application Test
     Then user verify header
     Then user enters username and password and clicks on login button 
     Then Home Page is Displayed
+    Then User switch to main frame
+    Then user go to contacts and clicks on new contacts
+    Then user add contacts details
+    Then user save contact details 
+    Then user close browser
 
   

@@ -125,39 +125,99 @@ formatter.step({
   "name": "Home Page is Displayed",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 30,
+  "name": "User switch to main frame",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 31,
+  "name": "user go to contacts and clicks on new contacts",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 32,
+  "name": "user add contacts details",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 33,
+  "name": "user save contact details",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 34,
+  "name": "user close browser",
+  "keyword": "Then "
+});
 formatter.match({
   "location": "HomePageSteps.user_opens_browser()"
 });
 formatter.result({
-  "duration": 22204463500,
+  "duration": 19277446901,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_is_on_Login_Page()"
 });
 formatter.result({
-  "duration": 392037900,
+  "duration": 392730400,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_verify_header()"
 });
 formatter.result({
-  "duration": 657505500,
+  "duration": 516043700,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_enters_username_and_password_and_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 11511489400,
+  "duration": 8759156500,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.home_Page_is_Displayed()"
 });
 formatter.result({
-  "duration": 72391000,
+  "duration": 30792800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomePageSteps.user_switch_to_main_frame()"
+});
+formatter.result({
+  "duration": 201574100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomePageSteps.user_go_to_contacts_and_clicks_on_new_contacts()"
+});
+formatter.result({
+  "duration": 4172979401,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomePageSteps.user_add_contacts_details()"
+});
+formatter.result({
+  "duration": 1103967300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomePageSteps.user_save_contact_details()"
+});
+formatter.result({
+  "duration": 2730240099,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomePageSteps.user_close_browser()"
+});
+formatter.result({
+  "duration": 1457773700,
   "status": "passed"
 });
 });

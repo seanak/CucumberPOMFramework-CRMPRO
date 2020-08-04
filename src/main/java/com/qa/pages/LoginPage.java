@@ -44,12 +44,10 @@ public class LoginPage extends TestBase {
 		return driver.findElement(loginPageHeader).isDisplayed();
 	}
 	
-	public HomePage doLogin(String email, String pwd) throws InterruptedException{
-		Thread.sleep(3000);
+	public HomePage doLogin(String email, String pwd){
 		driver.findElement(username).sendKeys(email);
 		driver.findElement(password).sendKeys(pwd);
 		driver.findElement(loginButton).click();
-		//Thread.sleep(6000);
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_WAIT, TimeUnit.MILLISECONDS);
 		return new HomePage(driver);
 	}

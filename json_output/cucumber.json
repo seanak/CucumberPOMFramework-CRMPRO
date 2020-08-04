@@ -86,7 +86,7 @@
         "steps": [
           {
             "result": {
-              "duration": 22204463500,
+              "duration": 19277446901,
               "status": "passed"
             },
             "line": 25,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 392037900,
+              "duration": 392730400,
               "status": "passed"
             },
             "line": 26,
@@ -110,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 657505500,
+              "duration": 516043700,
               "status": "passed"
             },
             "line": 27,
@@ -122,7 +122,7 @@
           },
           {
             "result": {
-              "duration": 11511489400,
+              "duration": 8759156500,
               "status": "passed"
             },
             "line": 28,
@@ -134,13 +134,73 @@
           },
           {
             "result": {
-              "duration": 72391000,
+              "duration": 30792800,
               "status": "passed"
             },
             "line": 29,
             "name": "Home Page is Displayed",
             "match": {
               "location": "HomePageSteps.home_Page_is_Displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 201574100,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User switch to main frame",
+            "match": {
+              "location": "HomePageSteps.user_switch_to_main_frame()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4172979401,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user go to contacts and clicks on new contacts",
+            "match": {
+              "location": "HomePageSteps.user_go_to_contacts_and_clicks_on_new_contacts()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1103967300,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user add contacts details",
+            "match": {
+              "location": "HomePageSteps.user_add_contacts_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2730240099,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user save contact details",
+            "match": {
+              "location": "HomePageSteps.user_save_contact_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1457773700,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user close browser",
+            "match": {
+              "location": "HomePageSteps.user_close_browser()"
             },
             "keyword": "Then "
           }

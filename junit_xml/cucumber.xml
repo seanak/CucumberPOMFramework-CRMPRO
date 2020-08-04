@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="34.837887">
-<testcase classname="Free CRM Application Test" name="Validate Free CRM Home Page Test" time="34.837887">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="38.642705">
+<testcase classname="Free CRM Application Test" name="Validate Free CRM Home Page Test" time="38.642705">
 <system-out><![CDATA[Given user opens browser....................................................passed
 Then user is on Login Page..................................................passed
 Then user verify header.....................................................passed
 Then user enters username and password and clicks on login button...........passed
 Then Home Page is Displayed.................................................passed
+Then User switch to main frame..............................................passed
+Then user go to contacts and clicks on new contacts.........................passed
+Then user add contacts details..............................................passed
+Then user save contact details..............................................passed
+Then user close browser.....................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
