@@ -29,7 +29,6 @@ public class LoginPage extends TestBase {
 		//here I gave driver value from base page to maintain only one session id through out test.
 		//If I use this.driver then driver value is null and then null pointer exception is coming.
 		TestBase.driver = driver; 
-		System.out.println(driver);
 		timeUtil = new TestUtil();
 		
 	}
@@ -56,46 +55,4 @@ public class LoginPage extends TestBase {
 	}
 	
 
-	
-	/*
-		@FindBy(xpath="//input[@name='username']")
-		WebElement username;
-		
-		@FindBy(xpath="//input [@name='password']")
-		WebElement password;
-		
-		@FindBy(xpath="//input[@class='btn btn-small']")
-		WebElement loginButton;
-		
-		@FindBy(xpath="//a[@class='navbar-brand']")
-		WebElement LoginPageHeader;
-
-		
-		
-		public LoginPage(){
-			PageFactory.initElements(driver, this);
-		}
-
-		
-		
-		
-		public String getLoginPageTitle(){
-			return driver.getTitle();
-		}
-
-		public boolean verifyLoginPageHeader(){
-			return LoginPageHeader.isDisplayed();
-		}
-		
-		public HomePage login(String email, String pwd){
-		
-			username.sendKeys(email);
-			
-			password.sendKeys(pwd);
-			
-			loginButton.click();
-			
-			return new HomePage(driver);
-		}
-*/
 }
