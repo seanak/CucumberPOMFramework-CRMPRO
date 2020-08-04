@@ -1,20 +1,68 @@
 package com.qa.pages;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+
+import com.qa.stepDefinitions.HomePageSteps;
 import com.qa.util.TestBase;
 import com.qa.util.TestUtil;
 
 public class LoginPage extends TestBase {
 	
+	TestBase testbase;
+	TestUtil timeUtil;
+	HomePageSteps homePS;
+	JavascriptExecutor js;
 	
-		@FindBy(name="username")
+	
+	By username  = By.xpath("//input[@name='username']");
+	By password  = By.xpath("//input[@name='password']");
+	By loginButton  = By.xpath("//input[@class='btn btn-small']");
+	By loginPageHeader  = By.xpath("//a[@class='navbar-brand']");
+	
+	//constructor of the class 
+	
+	public LoginPage(WebDriver driver){
+		//here I gave driver value from base page to maintain only one session id through out test.
+		//If I use this.driver then driver value is null and then null pointer exception is coming.
+		TestBase.driver = driver; 
+		System.out.println(driver);
+		timeUtil = new TestUtil();
+		
+	}
+	
+	//methods/ page actions 
+	
+	public String getLoginPageTitle(){
+		return driver.getTitle();	
+		
+	}
+	
+	public boolean verifyLoginPageHeader(){
+		return driver.findElement(loginPageHeader).isDisplayed();
+	}
+	
+	public HomePage doLogin(String email, String pwd) throws InterruptedException{
+		Thread.sleep(3000);
+		driver.findElement(username).sendKeys(email);
+		driver.findElement(password).sendKeys(pwd);
+		driver.findElement(loginButton).click();
+		//Thread.sleep(6000);
+		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_WAIT, TimeUnit.MILLISECONDS);
+		return new HomePage(driver);
+	}
+	
+
+	
+	/*
+		@FindBy(xpath="//input[@name='username']")
 		WebElement username;
 		
-		@FindBy(name="password")
-		WebElement userPassword;
+		@FindBy(xpath="//input [@name='password']")
+		WebElement password;
 		
 		@FindBy(xpath="//input[@class='btn btn-small']")
 		WebElement loginButton;
@@ -31,7 +79,7 @@ public class LoginPage extends TestBase {
 		
 		
 		
-		public String validateLoginPageTitle(){
+		public String getLoginPageTitle(){
 			return driver.getTitle();
 		}
 
@@ -39,17 +87,15 @@ public class LoginPage extends TestBase {
 			return LoginPageHeader.isDisplayed();
 		}
 		
-		public HomePage login(String email, String pwd) throws InterruptedException{
-			TestUtil.flashElement(username);
+		public HomePage login(String email, String pwd){
+		
 			username.sendKeys(email);
 			
-			TestUtil.flashElement(userPassword);
-			userPassword.sendKeys(pwd);
+			password.sendKeys(pwd);
 			
-			TestUtil.flashElement(loginButton);
 			loginButton.click();
 			
 			return new HomePage(driver);
 		}
-
+*/
 }

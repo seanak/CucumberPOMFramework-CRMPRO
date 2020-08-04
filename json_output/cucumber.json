@@ -86,7 +86,7 @@
         "steps": [
           {
             "result": {
-              "duration": 34283856400,
+              "duration": 22204463500,
               "status": "passed"
             },
             "line": 25,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 66800,
+              "duration": 392037900,
               "status": "passed"
             },
             "line": 26,
@@ -110,31 +110,31 @@
           },
           {
             "result": {
-              "duration": 66700,
+              "duration": 657505500,
               "status": "passed"
             },
             "line": 27,
-            "name": "user enters username and password",
+            "name": "user verify header",
             "match": {
-              "location": "HomePageSteps.user_enters_username_and_password()"
+              "location": "HomePageSteps.user_verify_header()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 64200,
+              "duration": 11511489400,
               "status": "passed"
             },
             "line": 28,
-            "name": "user clicks on login button",
+            "name": "user enters username and password and clicks on login button",
             "match": {
-              "location": "HomePageSteps.user_clicks_on_login_button()"
+              "location": "HomePageSteps.user_enters_username_and_password_and_clicks_on_login_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 69900,
+              "duration": 72391000,
               "status": "passed"
             },
             "line": 29,

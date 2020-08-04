@@ -10,7 +10,8 @@ import com.qa.util.TestBase;
 
 public class HomePage extends TestBase {
 	
-	WebDriver driver;
+	//WebDriver driver;
+	LoginPage  loginpage;
 	Actions action;
 	
 	By frame = By.xpath("//frame[@name='mainpanel']");
@@ -23,8 +24,10 @@ public class HomePage extends TestBase {
 	//constructor
  	
 	public HomePage(WebDriver driver){
-		this.driver=driver;
+		TestBase.driver=driver;
+		loginpage = new LoginPage(driver);
 		action = new Actions(driver);
+		
 	}
 	
 	//methods

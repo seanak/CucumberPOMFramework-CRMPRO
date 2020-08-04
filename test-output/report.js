@@ -112,12 +112,12 @@ formatter.step({
 });
 formatter.step({
   "line": 27,
-  "name": "user enters username and password",
+  "name": "user verify header",
   "keyword": "Then "
 });
 formatter.step({
   "line": 28,
-  "name": "user clicks on login button",
+  "name": "user enters username and password and clicks on login button",
   "keyword": "Then "
 });
 formatter.step({
@@ -129,35 +129,35 @@ formatter.match({
   "location": "HomePageSteps.user_opens_browser()"
 });
 formatter.result({
-  "duration": 34283856400,
+  "duration": 22204463500,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.user_is_on_Login_Page()"
 });
 formatter.result({
-  "duration": 66800,
+  "duration": 392037900,
   "status": "passed"
 });
 formatter.match({
-  "location": "HomePageSteps.user_enters_username_and_password()"
+  "location": "HomePageSteps.user_verify_header()"
 });
 formatter.result({
-  "duration": 66700,
+  "duration": 657505500,
   "status": "passed"
 });
 formatter.match({
-  "location": "HomePageSteps.user_clicks_on_login_button()"
+  "location": "HomePageSteps.user_enters_username_and_password_and_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 64200,
+  "duration": 11511489400,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.home_Page_is_Displayed()"
 });
 formatter.result({
-  "duration": 69900,
+  "duration": 72391000,
   "status": "passed"
 });
 });

@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -37,6 +38,8 @@ public class TestBase {
 		public static void initilize(){
 			String browserName = prop.getProperty("browser");
 			
+			System.out.println("Browser name is :- " + browserName);
+			
 			if(browserName.equalsIgnoreCase("chrome")){
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
@@ -50,9 +53,15 @@ public class TestBase {
 			
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();		
-			//driver.manage().timeouts().implicitlyWait(TestUtil.PAGE_LOAD_WAIT, TimeUnit.SECONDS);
-			//driver.manage().timeouts().pageLoadTimeout(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);		
+			driver.manage().timeouts().implicitlyWait(TestUtil.PAGE_LOAD_WAIT, TimeUnit.MILLISECONDS);
+			driver.manage().timeouts().pageLoadTimeout(TestUtil.IMPLICIT_WAIT, TimeUnit.MILLISECONDS);		
 			driver.get(prop.getProperty("url"));
+		/*	try {
+				Thread.sleep(10000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}*/
 		}
 	
 	

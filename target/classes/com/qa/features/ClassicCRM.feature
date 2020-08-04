@@ -24,8 +24,8 @@ Feature: Free CRM Application Test
   Scenario: Validate Free CRM Home Page Test
     Given user opens browser
     Then user is on Login Page
-    Then user enters username and password
-    Then user clicks on login button 
+    Then user verify header
+    Then user enters username and password and clicks on login button 
     Then Home Page is Displayed
 
   
